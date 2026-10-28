@@ -1,0 +1,139 @@
+.content-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px;
+  margin-bottom: 35px;
+  border: 1px solid rgba(20, 35, 70, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(20, 35, 70, 0.05);
+}
+
+.content-filter-search {
+  flex: 1;
+  min-width: 220px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  color: #7b8496;
+  background: #f7f8fb;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.content-filter-search:focus-within {
+  background: #fff;
+  border-color: rgba(191, 145, 47, 0.4);
+}
+
+.content-filter-search input {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #172746;
+  font-size: 14px;
+}
+
+.content-filter-search input::placeholder {
+  color: #9ca4b3;
+}
+
+.content-filter-clear-search {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  color: #68738a;
+  background: #e9edf3;
+  cursor: pointer;
+}
+
+.content-filter-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.content-filter-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #172746;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.content-filter-controls select {
+  height: 44px;
+  padding: 0 32px 0 13px;
+  border: 1px solid #e2e6ed;
+  border-radius: 11px;
+  outline: none;
+  color: #43516b;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.content-filter-controls select:focus {
+  border-color: #c59635;
+}
+
+.content-filter-reset {
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 10px;
+  color: #a76e13;
+  background: #fff5df;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.content-filter-reset:hover {
+  background: #fbe9bf;
+}
+
+@media (max-width: 900px) {
+  .content-filter {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .content-filter-controls {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-filter-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .content-filter-controls select,
+  .content-filter-reset {
+    width: 100%;
+  }
+
+  .content-filter-label {
+    margin-bottom: 3px;
+  }
+}

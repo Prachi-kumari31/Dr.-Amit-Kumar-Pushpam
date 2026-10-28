@@ -1,0 +1,459 @@
+.admin-ebooks-page {
+  min-height: 100vh;
+  padding: 55px 30px 90px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(198,160,76,.12),
+      transparent 35%
+    ),
+    #f7f5f0;
+  color: #292720;
+}
+
+.admin-ebook-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+}
+
+.admin-ebook-header > span {
+  color: #a27c35;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.admin-ebook-header h1 {
+  margin: 8px 0;
+  font-family: Georgia, serif;
+  font-size: 46px;
+}
+
+.admin-ebook-header p {
+  color: #777;
+}
+
+.admin-alert {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.admin-alert.error {
+  background: #fff0f0;
+  color: #a22;
+  border: 1px solid #f1caca;
+}
+
+.admin-alert.success {
+  background: #edf8ef;
+  color: #28623a;
+  border: 1px solid #cbe4d1;
+}
+
+.ebook-editor-card {
+  max-width: 1200px;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid #e7e0d5;
+  border-radius: 22px;
+  background: rgba(255,255,255,.92);
+  box-shadow:
+    0 20px 70px rgba(48,39,25,.08);
+}
+
+.editor-title {
+  margin-bottom: 30px;
+}
+
+.editor-title h2 {
+  margin: 0 0 7px;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+
+.editor-title p {
+  margin: 0;
+  color: #777;
+}
+
+.ebook-form-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ebook-editor-card label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ebook-editor-card label > span {
+  display: block;
+  margin-bottom: 8px;
+  color: #4c493f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ebook-editor-card input,
+.ebook-editor-card textarea,
+.ebook-editor-card select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #ded8cd;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  font: inherit;
+  transition: .2s;
+}
+
+.ebook-editor-card textarea {
+  resize: vertical;
+}
+
+.ebook-editor-card input:focus,
+.ebook-editor-card textarea:focus,
+.ebook-editor-card select:focus {
+  border-color: #b18a42;
+  box-shadow:
+    0 0 0 3px rgba(177,138,66,.1);
+}
+
+.upload-section {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+  gap: 22px;
+  margin: 30px 0;
+}
+
+.upload-box {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border: 2px dashed #d8cdbb;
+  border-radius: 18px;
+  background: #fcfaf6;
+  text-align: center;
+  transition: .25s;
+}
+
+.upload-box:hover {
+  border-color: #ae863c;
+  background: #faf6ed;
+}
+
+.upload-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.upload-box h3 {
+  margin: 5px 0;
+  font-family: Georgia, serif;
+}
+
+.upload-box p {
+  margin: 0 0 17px;
+  color: #888;
+  font-size: 13px;
+}
+
+.upload-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 11px 18px;
+  border-radius: 10px;
+  background: #293e2f;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cover-preview {
+  width: 120px;
+  height: 160px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.cover-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected-file {
+  max-width: 90%;
+  margin-top: 20px;
+  padding: 10px 13px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee9df;
+  color: #555;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price-section-admin {
+  margin: 30px 0;
+  padding: 25px;
+  border-radius: 16px;
+  background: #f4f0e8;
+}
+
+.price-section-admin h3 {
+  margin-top: 0;
+  font-family: Georgia, serif;
+}
+
+.price-section-admin small {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+}
+
+.ebook-options {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  margin: 0 !important;
+}
+
+.checkbox-label input {
+  width: auto;
+}
+
+.ebook-editor-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 48px;
+  padding: 0 25px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primary-button {
+  background: #293e2f;
+  color: white;
+}
+
+.primary-button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: #ebe7df;
+  color: #444;
+}
+
+.admin-ebook-list {
+  max-width: 1200px;
+  margin: 70px auto 0;
+}
+
+.list-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.list-heading h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.list-heading span {
+  color: #888;
+}
+
+.admin-ebook-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+  gap: 25px;
+}
+
+.admin-ebook-card {
+  overflow: hidden;
+  border: 1px solid #e5dfd4;
+  border-radius: 17px;
+  background: white;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+  transition: .3s;
+}
+
+.admin-ebook-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,.1);
+}
+
+.admin-card-cover {
+  height: 270px;
+  position: relative;
+  background: #e7e0d4;
+}
+
+.admin-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-card-cover > div {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+}
+
+.free-badge {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  padding: 7px 12px;
+  border-radius: 30px;
+  background: #264a32;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.admin-card-body {
+  padding: 22px;
+}
+
+.category-badge {
+  color: #a17b34;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.admin-card-body h3 {
+  margin: 9px 0;
+  font-family: Georgia, serif;
+  font-size: 21px;
+}
+
+.admin-card-body p {
+  min-height: 65px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admin-card-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #777;
+  font-size: 12px;
+}
+
+.admin-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.admin-card-actions button {
+  flex: 1;
+  min-height: 40px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  background: #eeeae2;
+  font-weight: 700;
+}
+
+.admin-card-actions .delete-button {
+  background: #fff0f0;
+  color: #a22;
+}
+
+.empty-state {
+  padding: 70px;
+  text-align: center;
+  border-radius: 18px;
+  background: white;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .ebook-form-grid,
+  .upload-section {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-ebook-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-ebooks-page {
+    padding: 35px 15px 70px;
+  }
+
+  .ebook-editor-card {
+    padding: 22px;
+  }
+
+  .admin-ebook-header h1 {
+    font-size: 36px;
+  }
+
+  .admin-ebook-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ebook-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ebook-editor-actions {
+    flex-direction: column;
+  }
+}

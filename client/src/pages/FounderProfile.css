@@ -1,0 +1,400 @@
+/* ============================================================
+   FounderProfile.css
+   Place at: client/src/pages/FounderProfile.css
+   Inherits: --font-serif, --font-sans, --gold, --amethyst etc.
+   from your global index.css
+   ============================================================ */
+
+/* ── Page wrapper ──────────────────────────────────────────── */
+.fp-root { background: #FAF7F2; min-height: 100vh; }
+
+/* ── Container ─────────────────────────────────────────────── */
+.fp-wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+
+/* ── Reveal animation ──────────────────────────────────────── */
+.fp-reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.fp-reveal.fp-in { opacity: 1; transform: translateY(0); }
+
+/* ── Badges ─────────────────────────────────────────────────── */
+.fp-badge {
+  display: inline-block; padding: 3px 11px; border-radius: 100px;
+  font-size: .68rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
+}
+.fp-b-blue  { background: #E6F0FB; color: #1A5FA8; }
+.fp-b-green { background: #E6F4EB; color: #15803D; }
+.fp-b-amber { background: #FEF3D8; color: #7A6023; }
+.fp-b-rose  { background: #FDE8F2; color: #7A2356; }
+.fp-b-gem   { background: #EDE8F7; color: #5C3D8F; }
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.fp-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px; border-radius: 100px;
+  font-family: inherit; font-size: .88rem; font-weight: 500;
+  letter-spacing: .025em; text-decoration: none; border: none;
+  cursor: pointer; transition: all .22s cubic-bezier(.4,0,.2,1);
+}
+.fp-btn-gold {
+  background: #C9A84C; color: #1A1025;
+  box-shadow: 0 4px 18px rgba(201,168,76,.32);
+}
+.fp-btn-gold:hover { background: #8A6F2E; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,168,76,.4); }
+.fp-btn-ol   { background: transparent; color: #C9A84C; border: 1.5px solid #C9A84C; }
+.fp-btn-ol:hover { background: #C9A84C; color: #1A1025; transform: translateY(-1px); }
+.fp-btn-ol-dk{ background: transparent; color: #5C3D8F; border: 1.5px solid #5C3D8F; }
+.fp-btn-ol-dk:hover { background: #5C3D8F; color: #fff; transform: translateY(-1px); }
+.fp-btn-wa   { background: #25D366; color: #fff; box-shadow: 0 4px 18px rgba(37,211,102,.3); }
+.fp-btn-wa:hover { background: #1ea855; transform: translateY(-2px); }
+.fp-btn-lg   { padding: 15px 36px; font-size: .95rem; }
+
+/* ── Section header ─────────────────────────────────────────── */
+.fp-sh   { margin-bottom: 44px; }
+.fp-eye  { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6F2E; margin-bottom: 9px; }
+.fp-h2   { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.55rem,2.6vw,2.1rem); font-weight: 400; line-height: 1.25; color: #1A1025; margin: 0; }
+.fp-bar  { width: 42px; height: 2px; background: linear-gradient(90deg, #C9A84C, rgba(201,168,76,.25)); border-radius: 2px; margin-top: 16px; }
+
+/* ── Body paragraphs ────────────────────────────────────────── */
+.fp-para { font-size: 1.02rem; line-height: 1.84; color: #3D3347; margin-bottom: 20px; }
+.fp-para:last-child { margin-bottom: 0; }
+
+/* ── Pull quote ─────────────────────────────────────────────── */
+.fp-pull {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: linear-gradient(135deg, #EDE8F7, #F8F5FF);
+  border-left: 3.5px solid #5C3D8F;
+  border-radius: 0 16px 16px 0;
+  padding: 22px 26px; margin: 28px 0 0;
+}
+.fp-pull-mark { font-size: 1.6rem; color: #C9A84C; flex-shrink: 0; margin-top: 2px; }
+.fp-pull-lbl  { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #5C3D8F; margin-bottom: 8px; }
+.fp-pull-txt  { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.1rem; font-style: italic; color: #2E2040; line-height: 1.65; margin: 0; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.fp-hero {
+  min-height: 100vh; background: #120D1E;
+  padding: 130px 0 88px; position: relative; overflow: hidden;
+  display: flex; align-items: center;
+}
+
+/* Orbs */
+.fp-orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+.fp-orb1 { width: 520px; height: 520px; background: rgba(92,61,143,.27); top: -12%; right: -6%; animation: fpOrb 13s ease-in-out infinite; }
+.fp-orb2 { width: 340px; height: 340px; background: rgba(201,168,76,.07); bottom: -8%; left: 8%; animation: fpOrb 19s ease-in-out infinite reverse; }
+@keyframes fpOrb {
+  0%,100%{transform:translate(0,0)}
+  33%{transform:translate(18px,-26px)}
+  66%{transform:translate(-14px,18px)}
+}
+
+/* Mandala bg */
+.fp-mandala-bg {
+  position: absolute; right: -5%; top: 50%; transform: translateY(-50%);
+  width: min(460px,42vw); height: min(460px,42vw);
+  opacity: .05; pointer-events: none;
+  stroke: #C9A84C; fill: none; stroke-width: .8;
+}
+
+/* Hero grid */
+.fp-hero-grid {
+  display: grid; grid-template-columns: 360px 1fr;
+  gap: 68px; align-items: center; position: relative; z-index: 2;
+}
+
+/* ── Photo ── */
+.fp-photo-col { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.fp-photo-ring { position: relative; width: 100%; }
+.fp-photo-frame {
+  width: 100%; aspect-ratio: .76;
+  border-radius: 24px 24px 50% 50%;
+  background: linear-gradient(145deg, rgba(92,61,143,.44), rgba(201,168,76,.12));
+  border: 1px solid rgba(201,168,76,.18);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;  
+}
+.fp-photo-img  { width: 100%; height: 100%; object-fit: cover; object-position: 25% 45%; }
+.fp-photo-ph   { font-size: 6rem; opacity: .22; user-select: none; }
+
+/* Floating credential cards */
+.fp-fc {
+  position: absolute;
+  background: rgba(12,8,22,.88); backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,168,76,.2); border-radius: 11px;
+  padding: 9px 13px; display: flex; align-items: center; gap: 9px;
+  z-index: 4; box-shadow: 0 4px 20px rgba(0,0,0,.28);
+  animation: fpFloat 5s ease-in-out infinite;
+}
+.fp-fc1 { top: 13%;  left: -25%; animation-delay: 0s;  }
+.fp-fc2 { top: 47%;  right:-20%; animation-delay: -2s; }
+.fp-fc3 { bottom:18%;left: -22%; animation-delay: -4s; }
+@keyframes fpFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+.fp-fc > span:first-child { font-size: 1.15rem; flex-shrink: 0; }
+.fp-fc b  { display: block; font-size: .73rem; font-weight: 500; color: #fff; }
+.fp-fc span{ display: block; font-size: .63rem; color: rgba(255,255,255,.42); margin-top: 1px; }
+
+/* Social */
+.fp-social { display: flex; gap: 10px; }
+.fp-soc-btn {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.11);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .88rem; color: rgba(255,255,255,.52);
+  text-decoration: none; transition: all .2s;
+}
+.fp-soc-btn:hover { background: #C9A84C; border-color: #C9A84C; color: #1A1025; transform: translateY(-2px); }
+
+/* ── Hero text ── */
+.fp-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(201,168,76,.11); border: 1px solid rgba(201,168,76,.26);
+  border-radius: 100px; padding: 5px 16px; margin-bottom: 22px;
+  font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #C9A84C;
+}
+.fp-pill-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: #C9A84C;
+  animation: fpBlink 2s ease-in-out infinite;
+}
+@keyframes fpBlink { 0%,100%{opacity:1} 50%{opacity:.22} }
+
+.fp-hero-name  { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.1rem,4.2vw,3.6rem); font-weight: 300; line-height: 1.1; color: #fff; margin: 0 0 8px; }
+.fp-hero-desig { font-size: .9rem; color: rgba(255,255,255,.5); font-weight: 400; letter-spacing: .02em; margin-bottom: 10px; }
+.fp-hero-hindi { font-family: 'Tiro Devanagari Hindi', serif; font-size: 1.05rem; color: rgba(201,168,76,.6); margin-bottom: 14px; }
+.fp-hero-tagline{ font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.12rem; font-style: italic; font-weight: 300; color: rgba(255,255,255,.62); line-height: 1.55; margin-bottom: 30px; max-width: 480px; }
+
+/* Stats */
+.fp-stats {
+  display: flex; gap: 36px; flex-wrap: wrap;
+  padding: 26px 0; border-top: 1px solid rgba(201,168,76,.13); border-bottom: 1px solid rgba(201,168,76,.13); margin-bottom: 26px;
+}
+.fp-stat strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.1rem; font-weight: 300; color: #C9A84C; line-height: 1; }
+.fp-stat span   { display: block; font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.36); margin-top: 4px; }
+
+/* Quick facts */
+.fp-qf { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 26px; }
+.fp-qf li { display: flex; align-items: center; gap: 9px; font-size: .84rem; color: rgba(255,255,255,.52); }
+.fp-qf li span { font-size: 1rem; flex-shrink: 0; }
+
+.fp-hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ============================================================
+   BODY LAYOUT
+   ============================================================ */
+.fp-body { background: #FAF7F2; padding: 0 0 64px; }
+.fp-body-grid { display: grid; grid-template-columns: 192px 1fr; gap: 52px; align-items: start; padding-top: 52px; }
+
+/* ── TOC ── */
+.fp-aside { position: sticky; top: 88px; align-self: start; }
+.fp-toc { background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px; padding: 18px 16px; box-shadow: 0 2px 14px rgba(26,16,37,.05); }
+.fp-toc-head { font-size: .66rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #8A6F2E; margin-bottom: 12px; }
+.fp-toc ul { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+.fp-toc-lnk {
+  display: block; font-size: .79rem; color: #6B6070;
+  padding: 6px 10px; border-radius: 8px; border-left: 2px solid transparent;
+  text-decoration: none; transition: all .17s; line-height: 1.35;
+}
+.fp-toc-lnk:hover { color: #1A1025; background: rgba(201,168,76,.07); }
+.fp-toc-active { color: #8A6F2E !important; font-weight: 600; border-left-color: #C9A84C !important; background: rgba(201,168,76,.07) !important; }
+
+/* ── Sections ── */
+.fp-content { min-width: 0; }
+.fp-sec { padding: 68px 0; border-bottom: 1px solid rgba(26,16,37,.07); }
+.fp-sec:last-child { border-bottom: none; }
+.fp-sec-alt { background: #EEE8DC; margin: 0 -28px; padding: 68px 28px; }
+
+/* ============================================================
+   PHILOSOPHY
+   ============================================================ */
+.fp-phil-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fp-phil-card {
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 16px;
+  padding: 26px; position: relative; overflow: hidden;
+  transition: all .28s cubic-bezier(.4,0,.2,1);
+}
+.fp-phil-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 3px; background: linear-gradient(90deg, #C9A84C, #5C3D8F);
+  transform: scaleX(0); transition: transform .3s ease; transform-origin: left;
+}
+.fp-phil-card:hover { transform: translateY(-5px); box-shadow: 0 10px 40px rgba(26,16,37,.11); }
+.fp-phil-card:hover::after { transform: scaleX(1); }
+.fp-phil-icon { font-size: 1.9rem; display: block; margin-bottom: 13px; }
+.fp-phil-head { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.08rem; font-weight: 500; color: #1A1025; margin: 0 0 9px; }
+.fp-phil-body { font-size: .86rem; color: #6B6070; line-height: 1.68; margin: 0; }
+
+/* ============================================================
+   TIMELINE (Education & Career)
+   ============================================================ */
+.fp-tl { display: flex; flex-direction: column; }
+.fp-tl-item { display: grid; grid-template-columns: 76px 1fr; gap: 18px; }
+.fp-tl-left { display: flex; flex-direction: column; align-items: center; padding-top: 5px; }
+.fp-tl-year { font-size: .75rem; font-weight: 600; color: #8A6F2E; text-align: center; white-space: nowrap; line-height: 1.3; }
+.fp-tl-spine { flex: 1; width: 1px; background: linear-gradient(to bottom, #C9A84C, rgba(201,168,76,.1)); margin-top: 8px; min-height: 28px; }
+.fp-tl-card {
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px;
+  padding: 20px 22px; margin-bottom: 14px; position: relative;
+  transition: border-color .22s, box-shadow .22s;
+}
+.fp-tl-card:hover { border-color: rgba(201,168,76,.35); box-shadow: 0 4px 20px rgba(26,16,37,.08); }
+.fp-tl-career { border-left: 3px solid #5C3D8F; }
+.fp-tl-dot {
+  position: absolute; top: 23px; left: -30px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #C9A84C; border: 2.5px solid #FAF7F2;
+  box-shadow: 0 0 0 2px #C9A84C;
+}
+.fp-tl-dot-gem { background: #5C3D8F; box-shadow: 0 0 0 2px #5C3D8F; }
+.fp-tl-degree { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.08rem; font-weight: 500; color: #1A1025; margin: 0 0 4px; }
+.fp-tl-inst   { font-size: .8rem; font-weight: 600; color: #8A6F2E; margin: 0 0 8px; }
+.fp-tl-detail { font-size: .83rem; color: #6B6070; line-height: 1.65; margin: 0; }
+
+/* ============================================================
+   CREDENTIALS
+   ============================================================ */
+.fp-cred-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.fp-cred-card {
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px;
+  padding: 22px 18px; text-align: center; transition: all .24s;
+}
+.fp-cred-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(26,16,37,.09); border-color: rgba(201,168,76,.28); }
+.fp-cred-icon  { font-size: 1.9rem; display: block; margin-bottom: 11px; }
+.fp-cred-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1rem; font-weight: 500; color: #1A1025; margin: 0 0 4px; }
+.fp-cred-sub   { font-size: .76rem; color: #9B96A2; margin: 0; }
+
+/* ============================================================
+   PUBLICATIONS / RESEARCH
+   ============================================================ */
+.fp-res-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+.fp-res-stat  { background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 11px; padding: 16px; text-align: center; }
+.fp-res-stat strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.9rem; font-weight: 300; color: #C9A84C; }
+.fp-res-stat span   { display: block; font-size: .68rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: #9B96A2; margin-top: 3px; }
+
+.fp-filt-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+.fp-filt {
+  padding: 7px 17px; border-radius: 100px; font-size: .8rem; font-weight: 500;
+  background: #fff; border: 1.5px solid rgba(26,16,37,.1); color: #6B6070; cursor: pointer; transition: all .18s;
+}
+.fp-filt:hover { border-color: #C9A84C; color: #1A1025; }
+.fp-filt-on   { background: #C9A84C; color: #1A1025; border-color: #C9A84C; font-weight: 600; }
+
+.fp-pub-list { display: flex; flex-direction: column; gap: 12px; }
+.fp-pub-card {
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px;
+  padding: 18px 20px; transition: all .22s;
+}
+.fp-pub-card:hover { border-color: rgba(201,168,76,.3); box-shadow: 0 4px 18px rgba(26,16,37,.07); }
+.fp-pub-top   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.fp-pub-year  { font-size: .76rem; font-weight: 600; color: #8A6F2E; }
+.fp-pub-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.04rem; font-weight: 500; color: #1A1025; line-height: 1.45; margin: 0 0 5px; }
+.fp-pub-venue { font-size: .79rem; color: #9B96A2; margin: 0 0 13px; }
+.fp-pub-foot  { display: flex; align-items: center; justify-content: space-between; }
+.fp-pub-cite  { font-size: .79rem; color: #6B6070; }
+.fp-pub-dl    { font-size: .79rem; font-weight: 500; color: #5C3D8F; background: #EDE8F7; border: none; padding: 5px 13px; border-radius: 100px; cursor: pointer; transition: all .2s; }
+.fp-pub-dl:hover { background: #5C3D8F; color: #fff; }
+
+/* ============================================================
+   AWARDS
+   ============================================================ */
+.fp-awards { display: flex; flex-direction: column; gap: 12px; }
+.fp-award {
+  display: flex; align-items: center; gap: 16px;
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px;
+  padding: 16px 20px; transition: all .22s;
+}
+.fp-award:hover { border-color: rgba(201,168,76,.3); box-shadow: 0 4px 18px rgba(26,16,37,.07); }
+.fp-award-trophy{ font-size: 1.7rem; flex-shrink: 0; }
+.fp-award-year  { font-size: .74rem; font-weight: 600; color: #8A6F2E; background: rgba(201,168,76,.1); padding: 3px 10px; border-radius: 100px; flex-shrink: 0; }
+.fp-award-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.02rem; font-weight: 500; color: #1A1025; margin: 0 0 2px; }
+.fp-award-body  { font-size: .79rem; color: #9B96A2; margin: 0; }
+
+/* ============================================================
+   MEDIA
+   ============================================================ */
+.fp-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.fp-media-card {
+  display: flex; gap: 15px; align-items: flex-start;
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 13px;
+  padding: 20px; transition: all .24s;
+}
+.fp-media-card:hover { transform: translateY(-3px); box-shadow: 0 8px 26px rgba(26,16,37,.09); border-color: rgba(201,168,76,.24); }
+.fp-media-icon  { font-size: 1.7rem; flex-shrink: 0; margin-top: 2px; }
+.fp-media-kind  { display: block; font-size: .67rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: #8A6F2E; margin-bottom: 5px; }
+.fp-media-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1rem; font-weight: 500; color: #1A1025; margin: 0 0 5px; }
+.fp-media-detail{ font-size: .83rem; color: #6B6070; line-height: 1.55; margin: 0 0 8px; }
+.fp-media-year  { font-size: .74rem; font-weight: 600; color: #9B96A2; }
+
+/* ============================================================
+   BLOG CARDS
+   ============================================================ */
+.fp-blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.fp-blog-card {
+  background: #fff; border: 1px solid rgba(26,16,37,.08); border-radius: 15px;
+  overflow: hidden; display: flex; flex-direction: column;
+  text-decoration: none; transition: all .26s cubic-bezier(.4,0,.2,1);
+}
+.fp-blog-card:hover { transform: translateY(-5px); box-shadow: 0 10px 36px rgba(26,16,37,.12); border-color: rgba(201,168,76,.26); }
+.fp-blog-img {
+  height: 96px; background: linear-gradient(135deg, #EDE8F7, #F0E4BC);
+  display: flex; align-items: center; justify-content: center; font-size: 2.4rem;
+}
+.fp-blog-body  { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+.fp-blog-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1rem; font-weight: 500; color: #1A1025; line-height: 1.4; margin: 8px 0 7px; flex: 1; }
+.fp-blog-excerpt{ font-size: .81rem; color: #6B6070; line-height: 1.6; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.fp-blog-meta  { display: flex; gap: 5px; font-size: .73rem; color: #9B96A2; margin-top: auto; }
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.fp-cta-sec {
+  background: #4A2C7A; position: relative; overflow: hidden;
+  padding: 72px 0;
+}
+.fp-cta-sec::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,.16) 0%, transparent 60%);
+  pointer-events: none;
+}
+.fp-cta-inner { text-align: center; position: relative; z-index: 1; }
+.fp-ornament  { font-size: 1.1rem; color: #C9A84C; opacity: .6; display: block; margin-bottom: 14px; }
+.fp-cta-h2   { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.6rem,2.8vw,2.2rem); font-weight: 400; color: #fff; margin: 0 0 12px; }
+.fp-cta-sub  { font-size: 1rem; line-height: 1.74; color: rgba(255,255,255,.62); max-width: 440px; margin: 0 auto 28px; }
+.fp-cta-btns { display: flex; align-items: center; justify-content: center; gap: 13px; flex-wrap: wrap; }
+.fp-cta-meta { margin-top: 18px; font-size: .78rem; color: rgba(255,255,255,.36); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1060px) {
+  .fp-hero-grid   { grid-template-columns: 300px 1fr; gap: 44px; }
+  .fp-body-grid   { grid-template-columns: 1fr; gap: 0; padding-top: 36px; }
+  .fp-aside       { position: static; margin-bottom: 28px; }
+  .fp-toc         { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+  .fp-toc-head    { margin-bottom: 0; margin-right: 8px; white-space: nowrap; }
+  .fp-toc ul      { flex-direction: row; flex-wrap: wrap; }
+  .fp-toc-lnk     { border-left: none; border-bottom: 2px solid transparent; }
+  .fp-toc-active  { border-left-color: transparent !important; border-bottom-color: #C9A84C !important; }
+  .fp-res-stats   { grid-template-columns: repeat(2,1fr); }
+  .fp-fc          { display: none; }
+}
+@media (max-width: 768px) {
+  .fp-hero        { padding: 96px 0 68px; }
+  .fp-hero-grid   { grid-template-columns: 1fr; gap: 32px; }
+  .fp-photo-col   { max-width: 280px; margin: 0 auto; }
+  .fp-photo-frame { aspect-ratio: 1; border-radius: 50%; }
+  .fp-stats       { gap: 20px; }
+  .fp-phil-grid   { grid-template-columns: 1fr; }
+  .fp-cred-grid   { grid-template-columns: repeat(2,1fr); }
+  .fp-blog-grid   { grid-template-columns: 1fr; }
+  .fp-media-grid  { grid-template-columns: 1fr; }
+  .fp-sec-alt     { margin: 0 -20px; padding: 60px 20px; }
+}
+@media (max-width: 480px) {
+  .fp-hero-name   { font-size: 2.1rem; }
+  .fp-cred-grid   { grid-template-columns: repeat(2,1fr); }
+  .fp-tl-item     { grid-template-columns: 58px 1fr; gap: 10px; }
+  .fp-award       { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fp-reveal, .fp-fc, .fp-orb, .fp-pill-dot { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+}
+
+

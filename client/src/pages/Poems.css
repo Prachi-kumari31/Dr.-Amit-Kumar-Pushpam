@@ -1,0 +1,381 @@
+.poems-page {
+  min-height: 100vh;
+  background: #f8f5ee;
+  color: #29231d;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.poems-hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(211, 170, 96, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #241f1a,
+      #493b2b
+    );
+
+  color: white;
+}
+
+.poems-hero-content {
+  max-width: 850px;
+  padding: 80px 25px;
+}
+
+.poems-eyebrow {
+  color: #d8ad69;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.poems-feather {
+  width: 80px;
+  height: 80px;
+  margin: 30px auto 20px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(216,173,105,0.5);
+  border-radius: 50%;
+  color: #d8ad69;
+  font-size: 32px;
+}
+
+.poems-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.poems-hero h1 em {
+  color: #d8ad69;
+}
+
+.poems-hero p {
+  max-width: 650px;
+  margin: 30px auto;
+  color: #d6d0c7;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.poems-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: #d8ad69;
+  color: #241f1a;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.poems-explore-btn:hover {
+  transform: translateY(-3px);
+  background: #edcb92;
+}
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.poems-quote {
+  max-width: 800px;
+  margin: auto;
+  padding: 100px 25px;
+  text-align: center;
+}
+
+.poems-quote-mark {
+  font-family: Georgia, serif;
+  font-size: 100px;
+  color: #d8ad69;
+  line-height: 0.5;
+}
+
+.poems-quote blockquote {
+  margin: 30px 0 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.poems-quote span {
+  color: #8a7b69;
+}
+
+/* =========================================================
+   LIBRARY
+========================================================= */
+
+.poem-library {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 25px 100px;
+}
+
+.poems-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.section-label {
+  color: #b27c2c;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.poems-header h2 {
+  margin-top: 12px;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.poems-search {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e8dfd0;
+  border-radius: 999px;
+  padding: 13px 18px;
+}
+
+.poems-search svg {
+  color: #b27c2c;
+}
+
+.poems-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+/* =========================================================
+   POEM CARDS
+========================================================= */
+
+.poems-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.poem-card {
+  padding: 32px;
+  background:
+    linear-gradient(
+      145deg,
+      #fffdf9,
+      #f7efe1
+    );
+  border: 1px solid #e7dac6;
+  border-radius: 22px;
+  box-shadow:
+    0 18px 45px rgba(71,52,30,0.06);
+  transition: 0.3s ease;
+}
+
+.poem-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 25px 55px rgba(71,52,30,0.12);
+}
+
+.poem-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b27c2c;
+}
+
+.poem-card-top svg {
+  font-size: 25px;
+}
+
+.poem-card-top span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.poem-card h3 {
+  margin: 28px 0 18px;
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+.poem-excerpt {
+  min-height: 100px;
+  color: #756a5e;
+  line-height: 1.8;
+  font-family: Georgia, serif;
+}
+
+.poem-line {
+  width: 45px;
+  height: 1px;
+  margin: 25px 0;
+  background: #c99a50;
+}
+
+.poem-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #8a7b69;
+  font-size: 0.78rem;
+}
+
+.poem-meta > div {
+  display: flex;
+  gap: 12px;
+}
+
+.poem-meta > div span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.poem-meta svg {
+  color: #b27c2c;
+}
+
+.poem-read-btn {
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #9a671e;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* =========================================================
+   STATES
+========================================================= */
+
+.poems-loading,
+.poems-empty {
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #756a5e;
+}
+
+.poems-empty svg {
+  font-size: 45px;
+  color: #c99a50;
+}
+
+.poem-spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid #eadfcd;
+  border-top-color: #b27c2c;
+  border-radius: 50%;
+  animation: poemSpin 0.8s linear infinite;
+}
+
+@keyframes poemSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.poems-error {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff1f2;
+  color: #be123c;
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.poems-pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.poems-pagination button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #ddcfbb;
+  background: white;
+  cursor: pointer;
+}
+
+.poems-pagination button:hover:not(:disabled) {
+  background: #b27c2c;
+  color: white;
+}
+
+.poems-pagination button:disabled {
+  opacity: 0.4;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .poems-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .poems-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .poems-search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .poems-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poems-hero {
+    min-height: 570px;
+  }
+
+  .poems-header h2 {
+    font-size: 2.3rem;
+  }
+}

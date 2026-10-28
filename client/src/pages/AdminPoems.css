@@ -1,0 +1,156 @@
+.admin-poems-page {
+  min-height: 100vh;
+  padding: 45px;
+  background:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(203,160,67,.13),
+      transparent 30%
+    ),
+    #f8f6f1;
+}
+
+.poems-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+}
+
+.poems-header > span {
+  color: #b08a2e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.poems-header h1 {
+  margin: 8px 0;
+  color: #10213d;
+  font-size: 44px;
+}
+
+.poems-header p {
+  color: #687386;
+}
+
+.poems-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+  gap: 24px;
+}
+
+.admin-poem-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #ebe5d8;
+  border-radius: 22px;
+  box-shadow:
+    0 15px 40px rgba(16,33,61,.07);
+}
+
+.admin-poem-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.poem-card-body {
+  padding: 22px;
+}
+
+.poem-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.poem-status.published {
+  background: #e9f8ef;
+  color: #18864b;
+}
+
+.poem-status.draft {
+  background: #f0f2f5;
+  color: #667085;
+}
+
+.poem-card-body h2 {
+  margin: 14px 0 8px;
+  color: #10213d;
+}
+
+.poem-card-body p {
+  color: #737d8e;
+  line-height: 1.6;
+}
+
+.poem-meta {
+  display: flex;
+  gap: 20px;
+  color: #7d8797;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.poem-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.poem-actions button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.poem-edit {
+  background: #eef3ff;
+  color: #3159a6;
+}
+
+.poem-delete {
+  background: #fff0f0;
+  color: #c62828;
+}
+
+.poems-error {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 14px;
+  background: #fff0f0;
+  color: #c62828;
+  border-radius: 10px;
+}
+
+.poems-loading,
+.poems-empty {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px;
+  text-align: center;
+  color: #7b8494;
+}
+
+@media (max-width: 900px) {
+  .poems-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-poems-page {
+    padding: 25px 18px;
+  }
+
+  .poems-grid {
+    grid-template-columns: 1fr;
+  }
+}

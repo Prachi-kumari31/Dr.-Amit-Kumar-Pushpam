@@ -1,0 +1,90 @@
+.poem-editor-page {
+  min-height: 100vh;
+  padding: 50px 25px;
+  background:
+    radial-gradient(
+      circle at 80% 0,
+      rgba(198,155,54,.12),
+      transparent 30%
+    ),
+    #f8f6f1;
+}
+
+.poem-editor-heading {
+  max-width: 900px;
+  margin: auto auto 30px;
+}
+
+.poem-editor-heading span {
+  color: #b08a2e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.poem-editor-heading h1 {
+  font-size: 42px;
+  color: #10213d;
+}
+
+.poem-editor-form {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow:
+    0 18px 50px rgba(16,33,61,.08);
+}
+
+.poem-editor-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #344054;
+}
+
+.poem-editor-form input,
+.poem-editor-form textarea,
+.poem-editor-form select {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 11px;
+  font: inherit;
+  outline: none;
+}
+
+.poem-writing-area {
+  font-family: Georgia, serif;
+  line-height: 1.8;
+}
+
+.poem-editor-form button {
+  background: #10213d;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 25px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.poem-editor-form button:hover {
+  background: #c69b36;
+}
+
+.poem-editor-error {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fff0f0;
+  color: #c62828;
+}
+
+.poem-editor-loading {
+  padding: 100px;
+  text-align: center;
+}

@@ -1,0 +1,381 @@
+.admin-article-editor {
+  min-height: 100vh;
+  background: #f4f5f7;
+}
+
+.article-editor-topbar {
+  min-height: 78px;
+  background: white;
+  border-bottom: 1px solid #e5e7ea;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 12px 25px;
+  position: sticky;
+  top: 120px;
+  z-index: 20;
+}
+
+.article-editor-back {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+}
+
+.article-editor-topbar > div:nth-child(2) {
+  flex: 1;
+}
+
+.article-editor-topbar span {
+  color: #a57d37;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.article-editor-topbar h1 {
+  margin: 3px 0 0;
+  font-size: 21px;
+}
+
+.article-editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.article-editor-actions button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 15px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.article-editor-actions button.preview {
+  background: #667085;
+}
+
+.article-editor-actions button.draft {
+  background: #b28235;
+}
+
+.article-editor-actions button.publish {
+  background: #1d7148;
+}
+
+.article-editor-actions button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+/* MESSAGE */
+
+.article-editor-message {
+  margin: 15px auto;
+  width: min(1200px, 94%);
+  padding: 13px 17px;
+  border-radius: 8px;
+}
+
+.article-editor-message.error {
+  background: #ffe6e6;
+  color: #a32929;
+}
+
+.article-editor-message.success {
+  background: #e6f7ed;
+  color: #23734a;
+}
+
+/* LAYOUT */
+
+.article-editor-layout {
+  width: min(1400px, 96%);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    320px;
+  gap: 25px;
+  margin-top:140px;
+}
+
+.article-editor-paper {
+  background: white;
+  border-radius: 14px;
+  box-shadow:
+    0 8px 30px rgba(20,30,40,.05);
+  overflow: hidden;
+}
+
+.article-editor-title {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  padding: 40px 45px 20px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.article-editor-excerpt {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  resize: none;
+  padding: 0 45px 25px;
+  font-size: 16px;
+  color: #777;
+  line-height: 1.7;
+}
+
+/* TOOLBAR */
+
+.article-editor-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px 18px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.article-editor-toolbar select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 7px;
+  background: white;
+}
+
+.article-editor-toolbar button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.article-editor-toolbar button:hover {
+  background: #e9ebee;
+}
+
+.toolbar-separator {
+  width: 1px;
+  height: 25px;
+  background: #ddd;
+  margin: 0 4px;
+}
+
+/* EDITOR */
+
+.article-rich-editor {
+  min-height: 650px;
+  outline: none;
+  padding: 40px 50px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.article-rich-editor:empty::before {
+  content: attr(data-placeholder);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.article-rich-editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-rich-editor blockquote {
+  border-left: 4px solid #bb8c3c;
+  background: #faf6ed;
+  padding: 15px 20px;
+}
+
+.article-editor-footer {
+  border-top: 1px solid #eee;
+  padding: 12px 20px;
+  display: flex;
+  gap: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+/* SIDEBAR */
+
+.article-editor-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.article-sidebar-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7ea;
+}
+
+.article-sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.article-sidebar-title svg {
+  color: #a77c35;
+}
+
+.article-sidebar-card label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+}
+
+.article-sidebar-card input,
+.article-sidebar-card textarea,
+.article-sidebar-card select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 7px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline: none;
+  font: inherit;
+}
+
+.article-check {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-check input {
+  width: auto;
+  margin: 0;
+}
+
+.choose-image {
+  width: 100%;
+  border: 0;
+  background: #183e5f;
+  color: white;
+  padding: 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.admin-cover-preview {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+/* PREVIEW */
+
+.article-editor-preview {
+  width: min(950px, 92%);
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(20,30,40,.1);
+}
+
+.article-editor-preview > img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.preview-article-content {
+  padding: 50px;
+}
+
+.preview-article-content > span {
+  color: #a77c35;
+  font-weight: 800;
+}
+
+.preview-article-content h1 {
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.preview-excerpt {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.preview-article-content > div {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.admin-editor-loading {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .article-editor-topbar {
+    flex-wrap: wrap;
+  }
+
+  .article-editor-actions {
+    width: 100%;
+  }
+
+  .article-editor-actions button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .article-editor-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .article-editor-title {
+    font-size: 32px;
+    padding: 30px 25px 15px;
+  }
+
+  .article-editor-excerpt {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .article-rich-editor {
+    padding: 30px 25px;
+  }
+}

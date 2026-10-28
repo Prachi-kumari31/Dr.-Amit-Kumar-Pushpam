@@ -1,0 +1,468 @@
+
+/* =========================================
+   PROSPER FOUNDATION - PUBLICATION EDITOR
+========================================= */
+
+.publication-editor {
+  --editor-primary: #17365d;
+  --editor-primary-dark: #102744;
+  --editor-gold: #c69b3c;
+  --editor-gold-light: #f6edda;
+  --editor-bg: #f8f6f0;
+  --editor-white: #ffffff;
+  --editor-text: #253247;
+  --editor-muted: #758092;
+  --editor-border: #e5e0d5;
+  --editor-danger: #c0392b;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  color: var(--editor-text);
+  font-family: inherit;
+}
+
+/* Make sizing predictable */
+
+.publication-editor *,
+.publication-editor *::before,
+.publication-editor *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.publication-editor .back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 10px 16px;
+
+  color: var(--editor-primary);
+  background: var(--editor-white);
+  border: 1px solid var(--editor-border);
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.publication-editor .back-button:hover {
+  background: var(--editor-primary);
+  color: var(--editor-white);
+  border-color: var(--editor-primary);
+  transform: translateX(-2px);
+}
+
+/* =========================================
+   EDITOR HEADER
+========================================= */
+
+.publication-editor .editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+  padding: 30px 32px;
+
+  background: linear-gradient(
+    125deg,
+    #17365d 0%,
+    #234b75 100%
+  );
+
+  border-radius: 16px;
+  border-bottom: 4px solid var(--editor-gold);
+  box-shadow: 0 8px 24px rgba(23, 54, 93, 0.12);
+}
+
+.publication-editor .editor-header span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #f0ce82;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.publication-editor .editor-header h1 {
+  margin: 0 0 12px;
+  color: var(--editor-white);
+
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.publication-editor .editor-header p {
+  max-width: 600px;
+  margin: 0;
+
+  color: #e0e8f1;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   MAIN FORM
+========================================= */
+
+.publication-editor .publication-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* =========================================
+   FORM SECTIONS
+========================================= */
+
+.publication-editor .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  padding: 30px;
+  background: var(--editor-white);
+
+  border: 1px solid var(--editor-border);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(35, 45, 60, 0.035);
+}
+
+.publication-editor .form-section h2 {
+  position: relative;
+  margin: 0;
+  padding-bottom: 15px;
+
+  color: var(--editor-primary);
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.publication-editor .form-section h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 48px;
+  height: 3px;
+
+  background: var(--editor-gold);
+  border-radius: 10px;
+  content: "";
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.publication-editor .editor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* =========================================
+   LABELS
+========================================= */
+
+.publication-editor .publication-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  color: var(--editor-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================
+   INPUTS, SELECTS, TEXTAREAS
+========================================= */
+
+.publication-editor .publication-form input,
+.publication-editor .publication-form select,
+.publication-editor .publication-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+
+  color: var(--editor-text);
+  background: #fdfdfc;
+
+  border: 1px solid #dcdfe5;
+  border-radius: 8px;
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.publication-editor .publication-form input,
+.publication-editor .publication-form select {
+  min-height: 47px;
+}
+
+.publication-editor .publication-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.publication-editor .publication-form input::placeholder,
+.publication-editor .publication-form textarea::placeholder {
+  color: #a1a8b3;
+  opacity: 1;
+}
+
+.publication-editor .publication-form input:hover,
+.publication-editor .publication-form select:hover,
+.publication-editor .publication-form textarea:hover {
+  border-color: #c6b68f;
+}
+
+.publication-editor .publication-form input:focus,
+.publication-editor .publication-form select:focus,
+.publication-editor .publication-form textarea:focus {
+  background: #ffffff;
+  border-color: var(--editor-gold);
+
+  box-shadow: 0 0 0 3px rgba(198, 155, 60, 0.14);
+}
+
+/* Dropdown */
+
+.publication-editor .publication-form select {
+  cursor: pointer;
+}
+
+/* Main content writing area */
+
+.publication-editor .publication-form .main-editor {
+  min-height: 350px;
+  padding: 18px;
+
+  background: #fffefa;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.publication-editor .editor-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  padding: 22px 26px;
+
+  background: var(--editor-white);
+  border: 1px solid var(--editor-border);
+  border-radius: 12px;
+}
+
+/* Shared button styling */
+
+.publication-editor .editor-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 46px;
+  padding: 12px 22px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Cancel button */
+
+.publication-editor .editor-actions button[type="button"] {
+  color: var(--editor-primary);
+  background: #ffffff;
+  border-color: #d8dce3;
+}
+
+.publication-editor .editor-actions button[type="button"]:hover {
+  background: #f1f3f6;
+  border-color: #b7bfcc;
+}
+
+/* Save / update button */
+
+.publication-editor .editor-actions button[type="submit"] {
+  color: #ffffff;
+  background: var(--editor-primary);
+  border-color: var(--editor-primary);
+  box-shadow: 0 4px 10px rgba(23, 54, 93, 0.12);
+}
+
+.publication-editor .editor-actions button[type="submit"]:hover {
+  background: var(--editor-primary-dark);
+  border-color: var(--editor-primary-dark);
+  box-shadow: 0 6px 14px rgba(23, 54, 93, 0.2);
+  transform: translateY(-1px);
+}
+
+.publication-editor .editor-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Accessible keyboard focus */
+
+.publication-editor button:focus-visible {
+  outline: 3px solid rgba(198, 155, 60, 0.5);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+  .publication-editor {
+    padding: 24px;
+  }
+
+  .publication-editor .editor-header {
+    padding: 26px;
+  }
+
+  .publication-editor .form-section {
+    padding: 24px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+  .publication-editor {
+    padding: 16px;
+  }
+
+  .publication-editor .back-button {
+    margin-bottom: 20px;
+  }
+
+  .publication-editor .editor-header {
+    padding: 22px 20px;
+    border-radius: 12px;
+  }
+
+  .publication-editor .editor-header h1 {
+    font-size: 26px;
+  }
+
+  .publication-editor .editor-header p {
+    font-size: 13px;
+  }
+
+  .publication-editor .editor-header span {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .publication-editor .form-section {
+    gap: 19px;
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .publication-editor .form-section h2 {
+    font-size: 17px;
+  }
+
+  .publication-editor .editor-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 19px;
+  }
+
+  .publication-editor .publication-form input,
+  .publication-editor .publication-form select,
+  .publication-editor .publication-form textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .publication-editor .publication-form .main-editor {
+    min-height: 260px;
+  }
+
+  .publication-editor .editor-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: 18px;
+  }
+
+  .publication-editor .editor-actions button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .publication-editor {
+    padding: 10px;
+  }
+
+  .publication-editor .form-section {
+    padding: 16px 12px;
+  }
+
+  .publication-editor .editor-header {
+    padding: 18px 15px;
+  }
+
+  .publication-editor .editor-actions {
+    padding: 14px;
+  }
+}

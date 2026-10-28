@@ -1,0 +1,148 @@
+.content-detail {
+  background: #faf8f3;
+  min-height: 100vh;
+  padding: 70px 20px;
+}
+
+.detail-container {
+  width: min(920px, 100%);
+  margin: auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #a47720;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.detail-header {
+  text-align: center;
+}
+
+.detail-category {
+  display: inline-block;
+  color: #a47720;
+  background: #f1e6c8;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.detail-header h1 {
+  font-family: Georgia, serif;
+  color: #1d2d40;
+  font-size: clamp(38px, 6vw, 62px);
+  line-height: 1.1;
+  margin: 22px 0;
+}
+
+.detail-excerpt {
+  max-width: 760px;
+  margin: auto;
+  color: #74797e;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.detail-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+  color: #777;
+  font-size: 13px;
+}
+
+.detail-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-cover {
+  margin: 50px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+}
+
+.detail-cover img {
+  width: 100%;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.detail-content {
+  background: white;
+  padding: clamp(25px, 5vw, 65px);
+  border-radius: 20px;
+  box-shadow:
+    0 10px 35px rgba(0,0,0,.06);
+  color: #38434e;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.detail-content h2,
+.detail-content h3 {
+  color: #1d2d40;
+  font-family: Georgia, serif;
+  margin-top: 35px;
+}
+
+.detail-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.detail-content blockquote {
+  border-left: 4px solid #c99a2e;
+  margin: 30px 0;
+  padding: 20px 25px;
+  background: #faf7ef;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.detail-content a {
+  color: #a47720;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.detail-tags span {
+  background: #f0e7d1;
+  color: #8d6922;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.detail-loading,
+.detail-error {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detail-error a {
+  color: #a47720;
+}

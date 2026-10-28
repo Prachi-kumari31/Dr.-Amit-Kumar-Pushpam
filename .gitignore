@@ -1,0 +1,37 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Testing
+coverage/
+
+# Production builds
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local configuration
+*.local
+# Uploaded files (review before ignoring)
+# backend/uploads/
+
+/backend/config/adminCredentials.js

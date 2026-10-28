@@ -1,0 +1,592 @@
+.story-detail-page {
+  min-height: 100vh;
+  background: #f8f5ef;
+  color: #29231d;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.story-detail-hero {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      #302515,
+      #8b6b3f
+    );
+}
+
+.story-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(20, 15, 10, 0.15),
+      rgba(20, 15, 10, 0.85)
+    );
+}
+
+.story-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 45px 0 65px;
+  color: white;
+}
+
+.story-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.story-type-badge {
+  display: inline-block;
+  background: #d5a441;
+  color: #21180c;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.story-hero-content h1 {
+  max-width: 900px;
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.04;
+  margin: 18px 0;
+}
+
+.story-excerpt {
+  max-width: 750px;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.story-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.story-detail-container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+  padding: 65px 0 100px;
+}
+
+/* =========================================================
+   READING CARD
+========================================================= */
+
+.story-reading-card {
+  background: #fffdf8;
+  border-radius: 22px;
+  padding: clamp(25px, 5vw, 65px);
+  box-shadow:
+    0 15px 50px rgba(65, 48, 25, 0.08);
+  border: 1px solid #eee4d4;
+}
+
+.story-content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee4d4;
+  margin-bottom: 40px;
+}
+
+.story-content-top span {
+  color: #876633;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.share-btn {
+  border: 1px solid #d9c7a8;
+  background: transparent;
+  color: #76582d;
+  border-radius: 25px;
+  padding: 9px 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* =========================================================
+   HTML CONTENT
+========================================================= */
+
+.story-html-content {
+  line-height: 1.9;
+  color: #3c342c;
+}
+
+.story-html-content p {
+  margin: 0 0 25px;
+}
+
+.story-html-content h1,
+.story-html-content h2,
+.story-html-content h3 {
+  color: #49351c;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.story-html-content blockquote {
+  margin: 30px 0;
+  padding: 20px 25px;
+  border-left: 4px solid #d5a441;
+  background: #faf4e8;
+  font-style: italic;
+}
+
+.story-html-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
+.story-html-content a {
+  color: #9b6d1f;
+}
+
+/* =========================================================
+   POEM
+========================================================= */
+
+.poem-reading .story-html-content {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.poem-reading .story-html-content .poem-line {
+  margin-bottom: 7px;
+}
+
+.poem-reading .story-html-content .poem-space {
+  height: 22px;
+}
+
+/* =========================================================
+   PDF BOX
+========================================================= */
+
+.original-pdf-box {
+  margin-top: 60px;
+  padding: 25px;
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      135deg,
+      #fff8e9,
+      #f7edd9
+    );
+  border: 1px solid #e4cfaa;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pdf-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #a53a32;
+  color: white;
+  border-radius: 14px;
+  font-size: 25px;
+}
+
+.pdf-info {
+  flex: 1;
+}
+
+.pdf-info h3 {
+  margin: 0 0 7px;
+  color: #4d351a;
+}
+
+.pdf-info p {
+  margin: 0 0 5px;
+  color: #725d3d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.pdf-info small {
+  color: #9a825c;
+}
+
+.pdf-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pdf-view-btn,
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 11px 17px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pdf-view-btn {
+  color: white;
+  background: #6f5128;
+}
+
+.pdf-download-btn {
+  color: #6f5128;
+  background: white;
+  border: 1px solid #cdb78f;
+}
+
+/* =========================================================
+   REACTIONS
+========================================================= */
+
+.story-reactions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 45px;
+  padding-top: 30px;
+  border-top: 1px solid #eee4d4;
+}
+
+.reaction {
+  border: 1px solid #dcccb3;
+  background: #fff;
+  color: #765b36;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.reaction.active {
+  background: #f7e8c9;
+  border-color: #d5a441;
+  color: #8c641f;
+}
+
+.reaction.dislike.active {
+  background: #f3dfdc;
+  border-color: #b86a61;
+  color: #8d3830;
+}
+
+/* =========================================================
+   COMMENTS
+========================================================= */
+
+.comments-section {
+  margin-top: 70px;
+}
+
+.comments-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.comments-heading span {
+  color: #a07b3f;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.comments-heading h2 {
+  margin: 10px 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.comments-heading p {
+  color: #7b7064;
+}
+
+.comment-form {
+  background: white;
+  border: 1px solid #eee3d3;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 35px rgba(65, 48, 25, 0.05);
+}
+
+.comment-input-group {
+  margin-bottom: 20px;
+}
+
+.comment-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #57462f;
+}
+
+.comment-input-group input,
+.comment-input-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfd3c0;
+  border-radius: 12px;
+  padding: 13px 15px;
+  outline: none;
+  background: #fffdf9;
+  font: inherit;
+}
+
+.comment-input-group textarea {
+  resize: vertical;
+}
+
+.comment-input-group input:focus,
+.comment-input-group textarea:focus {
+  border-color: #b78a3f;
+  box-shadow:
+    0 0 0 3px rgba(183, 138, 63, 0.1);
+}
+
+.comment-submit {
+  border: 0;
+  background: #765426;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comment-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.comment-error,
+.comment-success {
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.comment-error {
+  background: #fff0ee;
+  color: #a13c32;
+}
+
+.comment-success {
+  background: #edf8ef;
+  color: #28733b;
+}
+
+.comments-list {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.comment-card {
+  background: white;
+  border: 1px solid #eee3d3;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  gap: 15px;
+}
+
+.comment-avatar {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ead9b9;
+  color: #684b21;
+  font-weight: 800;
+}
+
+.comment-body h4 {
+  margin: 0 0 6px;
+}
+
+.comment-body p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+  color: #554c42;
+}
+
+.comment-body small {
+  color: #988d80;
+}
+
+.no-comments {
+  padding: 30px;
+  text-align: center;
+  color: #8b8175;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.story-detail-loading {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 15px;
+  color: #73552a;
+}
+
+.story-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eadfce;
+  border-top-color: #9c712d;
+  border-radius: 50%;
+  animation: storySpin 0.8s linear infinite;
+}
+
+@keyframes storySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.story-detail-error {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: #f8f5ef;
+}
+
+.story-error-card {
+  max-width: 500px;
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.story-error-card > svg {
+  font-size: 40px;
+  color: #a57b35;
+}
+
+.story-error-card button {
+  border: 0;
+  background: #765426;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+  .story-detail-hero {
+    min-height: 430px;
+  }
+
+  .story-hero-content {
+    padding-bottom: 40px;
+  }
+
+  .story-meta {
+    gap: 12px;
+  }
+
+  .original-pdf-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pdf-actions {
+    width: 100%;
+  }
+
+  .pdf-view-btn,
+  .pdf-download-btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .story-content-top {
+    align-items: flex-start;
+  }
+
+  .story-reading-card {
+    padding: 25px 20px;
+  }
+}
