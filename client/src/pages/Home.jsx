@@ -1300,7 +1300,7 @@ import "./Home.css";
 import { getAllEbooks } from "../api/ebookApi";
 import { getBlogs } from "../api/contentApi";
 
-import founderImage from "../assets/images/amit1.jpeg";
+import founderImage from "../assets/images/amit.jpeg";
 import heroVideo    from "../assets/videos/hero3.mp4";
 
 /* ── Scroll reveal ─────────────────────────────────────── */
