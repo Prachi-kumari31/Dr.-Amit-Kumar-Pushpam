@@ -87,11 +87,11 @@ const token = generateToken(admin._id, admin.role);
       token,
       data: {
         id: admin._id,
-        username: admin.username,
-        email: admin.email,
-        fullName: admin.fullName,
-        profilePicture: admin.profilePicture,
-        permissions: admin.permissions,
+        // username: admin.username,
+        // email: admin.email,
+        // fullName: admin.fullName,
+        // profilePicture: admin.profilePicture,
+        // permissions: admin.permissions,
       },
     });
   } catch (error) {
