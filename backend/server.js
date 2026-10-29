@@ -144,7 +144,7 @@ import purchaseRoutes from './routes/purchaseRoutes.js';
 import contentRoutes from './routes/contentRoutes.js';
 import uploadRoutes from "./routes/uploadRoutes.js";
 import articleRoutes from "./routes/articleRoutes.js";
-import mediaRoutes from "./routes/mediaRoutes.js";
+import mediaRoutes from "./routes/MediaRoutes.js";
 
 // Use Routes
 app.use('/api/auth', authRoutes);
