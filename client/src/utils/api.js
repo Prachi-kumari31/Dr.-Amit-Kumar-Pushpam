@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+  process.env.REACT_APP_API_URL || "https://dr-amit-kumar-pushpam-1.onrender.com/api";
 
 export const apiFetch = async (endpoint, options = {}) => {
   try {

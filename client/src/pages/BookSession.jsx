@@ -15,7 +15,7 @@ import {
 import "./BookSession.css";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL || "https://dr-amit-kumar-pushpam-1.onrender.com/api";
 
 const BookSession = () => {
   const today = new Date().toISOString().split("T")[0];

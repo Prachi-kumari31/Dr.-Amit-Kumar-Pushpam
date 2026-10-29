@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./AdminTestimonials.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://dr-amit-kumar-pushpam-1.onrender.com/api";
 
 const AdminTestimonials = () => {
   const [testimonials, setTestimonials] = useState([]);

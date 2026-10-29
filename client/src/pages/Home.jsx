@@ -1348,7 +1348,7 @@ function TestimonialForm({ onClose }) {
     e.preventDefault();
     setBusy(true);
     try {
-      await fetch("http://localhost:5000/api/testimonials", {
+      await fetch("https://dr-amit-kumar-pushpam-1.onrender.com/api/testimonials", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -1629,7 +1629,7 @@ useEffect(() => {
       setTestimonialsLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/testimonials"
+        "https://dr-amit-kumar-pushpam-1.onrender.com/api/testimonials"
       );
 
       if (!response.ok) {

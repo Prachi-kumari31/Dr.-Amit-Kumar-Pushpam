@@ -12,7 +12,7 @@ import {
 import AdminLayout from "../components/AdminLayout";
 import "./AdminEnquiries.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://dr-amit-kumar-pushpam-1.onrender.com/api";
 
 const STATUS = {
   NEW: "New",
