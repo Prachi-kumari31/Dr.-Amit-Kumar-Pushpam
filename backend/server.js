@@ -114,14 +114,30 @@ app.use(
 //   credentials: true
 // }));
 
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://www.dramitkumarpushpam.com",
+  "https://dramitkumarpushpam.com",
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
 const corsOptions = {
-  origin: "http://localhost:3000"|| process.env.FRONTEND_URL,
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error(`CORS blocked origin: ${origin}`));
+  },
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
+  optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
+
 
 // Health check route
 app.get('/api/health', (req, res) => {
