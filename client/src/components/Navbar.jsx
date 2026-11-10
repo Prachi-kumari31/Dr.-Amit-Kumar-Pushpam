@@ -7,7 +7,7 @@ import {
   FaBookOpen,
   FaFileAlt,
 } from "react-icons/fa";
-import logo from "../assets/images/Prosper-Foundation-logo.png";
+import logo from "../assets/images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
