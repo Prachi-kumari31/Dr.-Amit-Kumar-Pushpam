@@ -193,7 +193,7 @@ const adminSchema = new mongoose.Schema(
 
     bio: {
       type: String,
-      default: "Prosper Foundation Admin",
+      default: "Dr. Amit Kumar Pushpam Admin",
     },
 
     role: {

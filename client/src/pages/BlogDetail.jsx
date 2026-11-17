@@ -602,7 +602,7 @@ const getAuthorName = (blog) => {
     blog?.author?.name ||
     blog?.author?.fullName ||
     blog?.author?.username ||
-    "Prosper Foundation"
+    "Dr. Amit Kumar Pushpam"
   );
 };
 
@@ -855,7 +855,7 @@ export default function BlogDetail() {
     return {
       title:
         blog?.title ||
-        "Prosper Foundation",
+        "Dr. Amit Kumar Pushpam",
       text:
         blog?.excerpt ||
         createExcerpt(blog?.content),
@@ -1234,7 +1234,7 @@ export default function BlogDetail() {
         <div className="blog-detail-container hero-container">
 
           <Link
-            to="/blog"
+            to="/blogs"
             className="back-link"
           >
             <ArrowLeft size={16} />
@@ -1248,7 +1248,7 @@ export default function BlogDetail() {
 
               <span>
                 {blog.category ||
-                  "Prosper Foundation Journal"}
+                  "Dr. Amit Kumar Pushpam Journal"}
               </span>
             </div>
 
@@ -1416,7 +1416,7 @@ export default function BlogDetail() {
 
                 <p>
                   {blog.author?.bio ||
-                    "Contributor to Prosper Foundation's journal, exploring ideas around personal growth, consciousness and holistic understanding."}
+                    "Contributor to Dr. Amit Kumar Pushpam journal, exploring ideas around personal growth, consciousness and holistic understanding."}
                 </p>
               </div>
             </section>
@@ -1733,8 +1733,7 @@ export default function BlogDetail() {
 
               <p>
                 Discover more thoughtful
-                perspectives from Prosper
-                Foundation.
+                perspectives from Dr. Amit Kumar Pushpam.
               </p>
 
               <Link to="/blog">
@@ -1754,7 +1753,7 @@ export default function BlogDetail() {
               </blockquote>
 
               <span>
-                — Prosper Foundation
+                — Dr. Amit Kumar Pushpam
               </span>
 
             </div>
@@ -1807,7 +1806,7 @@ export default function BlogDetail() {
               </h2>
             </div>
 
-            <Link to="/blog">
+            <Link to="/blogs">
               Browse journal
               <ArrowRight size={18} />
             </Link>

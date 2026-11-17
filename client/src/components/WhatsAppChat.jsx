@@ -12,7 +12,7 @@ const WhatsAppChat = () => {
   const handleSendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(
-        `Hello! ${message}\n\n- Sent from Prosper Foundation Website`
+        `Hello! ${message}\n\n- Sent from Dr. Amit Kumar Puhspam Website`
       );
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
       window.open(whatsappUrl, "_blank");

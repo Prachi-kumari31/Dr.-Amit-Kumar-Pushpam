@@ -631,8 +631,7 @@ const Ebooks = () => {
                           <FaBookOpen />
 
                           <span>
-                            Prosper
-                            Foundation
+                            Dr. Amit Kumar Pushpam
                           </span>
 
                         </div>
@@ -708,7 +707,7 @@ const Ebooks = () => {
                         By{" "}
                         <strong>
                           {ebook.author ||
-                            "Prosper Foundation"}
+                            "Dr. Amit Kumar Pushpam"}
                         </strong>
                       </p>
 

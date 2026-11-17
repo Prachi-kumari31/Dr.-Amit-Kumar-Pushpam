@@ -27,8 +27,8 @@ const createAdmin = async () => {
       username: "admin",
       email: "pushpamamit@gmail.com",
       password: "Admin@12345",
-      fullName: "Prosper Foundation Admin",
-      bio: "Prosper Foundation Administrator",
+      fullName: "Dr. Amit Kumar Pushpam Admin",
+      bio: "Dr. Amit Kumar Pushpam Administrator",
       isActive: true,
     });
 

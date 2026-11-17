@@ -124,7 +124,7 @@ const handleLogout = () => {
             </span>
 
             <span className="logo-text">
-              Prosper Admin
+               Admin
             </span>
           </Link>
 

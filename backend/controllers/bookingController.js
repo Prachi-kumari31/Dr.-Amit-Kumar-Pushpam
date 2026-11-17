@@ -473,7 +473,7 @@ export const confirmBooking = asyncHandler(
         to: booking.email,
 
         subject:
-          "Your Prosper Foundation Session is Confirmed",
+          "Your Dr. Amit Kumar Pushpam Session is Confirmed",
 
         html: `
           <div style="
@@ -491,7 +491,7 @@ export const confirmBooking = asyncHandler(
             ">
 
               <h1>
-                Prosper Foundation
+                Dr. Amit Kumar Pushpam
               </h1>
 
               <p>
@@ -583,7 +583,7 @@ export const confirmBooking = asyncHandler(
                     ">
 
                       <strong>
-                        Message from Prosper Foundation
+                        Message from  Dr. Amit Kumar Pushpam
                       </strong>
 
                       <p>
@@ -603,7 +603,7 @@ export const confirmBooking = asyncHandler(
               <p>
                 Regards,<br/>
                 <strong>
-                  Prosper Foundation
+                 Dr. Amit Kumar Pushpam
                 </strong>
               </p>
 

@@ -145,7 +145,7 @@ const seedAdmin = async () => {
 
         fullName: "Dr. Amit Kumar Pushpam",
 
-        bio: "Founder & Director, Prosper Foundation",
+        bio: "Founder & Director, Dr. Amit Kumar Pushpam",
 
         role: "admin",
 

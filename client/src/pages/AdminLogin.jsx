@@ -136,8 +136,8 @@ const AdminLogin = () => {
           </div>
 
           <div className="logo-text">
-            <strong>PROSPER</strong>
-            <small>FOUNDATION</small>
+            <strong>Dr. Amit Kumar Pushpam</strong>
+            
           </div>
         </div>
 

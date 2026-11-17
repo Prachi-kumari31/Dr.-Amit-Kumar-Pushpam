@@ -618,7 +618,7 @@ export default function PublicationDetail() {
             </span>
 
             <span>
-              By {publication.author || "Prosper Foundation"}
+              By {publication.author || "Dr. Amit Kumar Pushpam"}
             </span>
           </div>
         </div>

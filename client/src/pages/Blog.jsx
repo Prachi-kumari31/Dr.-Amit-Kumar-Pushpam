@@ -41,7 +41,7 @@ const getAuthorName = (blog) => {
     blog?.author?.name ||
     blog?.author?.fullName ||
     blog?.author?.username ||
-    "Prosper Foundation"
+    "Dr. Amit Kumar Pushpam"
   );
 };
 
@@ -454,7 +454,7 @@ export default function Blog() {
                         ) : (
                           <div className="blog-image-placeholder">
                             <span>
-                              PROSPER
+                           Dr. Amit Kumar Pushpam
                             </span>
                           </div>
                         )}

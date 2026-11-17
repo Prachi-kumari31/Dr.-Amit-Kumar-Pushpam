@@ -142,7 +142,7 @@ const handleSubmit = async (e) => {
               <div>
                 <h3>Email Us</h3>
 
-                <a href="mailto:info@prosperfoundation.org">
+                <a href="mailto:pushpamamit@gmail.com">
                  pushpamamit@gmail.com
                 </a>
 

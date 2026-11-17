@@ -1914,7 +1914,7 @@ const StoryDetail = () => {
             <div>
               <span>
                 {story.authorName ||
-                  "Prosper Foundation"}
+                  "Dr. Amit Kumar Pushpam"}
               </span>
             </div>
 

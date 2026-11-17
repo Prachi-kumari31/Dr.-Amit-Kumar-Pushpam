@@ -322,7 +322,7 @@ export default function ContentListing() {
       <section className="content-listing-hero">
         <div className="content-listing-container">
           <span className="content-listing-label">
-            Prosper Foundation
+            Dr. Amit Kumar Pushpam
           </span>
 
           <h1>{heading}</h1>

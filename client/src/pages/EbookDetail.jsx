@@ -396,7 +396,7 @@ const EbookDetail = () => {
             <div className="detail-hero-copy">
 
               <span className="detail-eyebrow">
-                PROSPER FOUNDATION
+                Dr. Amit Kumar Pushpam
                 <span />
                 DIGITAL EDITION
               </span>
@@ -417,7 +417,7 @@ const EbookDetail = () => {
                 Written by{" "}
                 <strong>
                   {ebook.author ||
-                    "Prosper Foundation"}
+                    "Dr. Amit Kumar Pushpam"}
                 </strong>
               </p>
 
@@ -492,7 +492,7 @@ const EbookDetail = () => {
                     <FaBookOpen />
 
                     <span>
-                      Prosper Foundation
+                      Dr. Amit Kumar Pushpam
                     </span>
 
                   </div>
@@ -827,7 +827,7 @@ const EbookDetail = () => {
             <div>
 
               <span>
-                PROSPER FOUNDATION
+                Dr. Amit Kumar Pushpam
               </span>
 
               <h2>

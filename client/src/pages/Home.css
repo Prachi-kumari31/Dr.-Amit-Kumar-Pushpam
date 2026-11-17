@@ -1205,7 +1205,10 @@ body {
     #071522;
 
   color: #fff;
-  max-height:900px;
+   height: auto;
+  min-height: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 .h-journey .h-h2 {
@@ -2614,7 +2617,7 @@ body {
   }
 
   .h-hero-content {
-    padding-top: 35px;
+    padding-top: 0px;
   }
 
   .h-hero h1 {
@@ -2801,11 +2804,11 @@ body {
   }
 
   .h-hero {
-    padding-top: 95px;
+    padding-top: 45px;
   }
 
   .h-hero h1 {
-    font-size: 3.35rem;
+    font-size: 2.69rem;
   }
 
   .h-hero-btns {
@@ -4387,3 +4390,118 @@ body {
 }
 
 
+
+/* PROFESSIONAL JOURNEY - MOBILE FIX */
+@media (max-width: 768px) {
+
+  .h-journey {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .h-journey-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .h-journey-grid::before {
+    display: none !important;
+  }
+
+  .h-jrn-item {
+    width: 100%;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 0 12px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .h-jrn-title {
+    font-size: 1.5rem;
+  }
+
+  .h-jrn-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+.h-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+}
+/* =========================================
+   GLOBAL CONTENT TEXT ALIGNMENT
+========================================= */
+
+/* Main content paragraphs */
+.h-home p,
+.h-para,
+.h-sec-sub,
+.h-domain-desc,
+.h-svc-desc,
+.h-pub-desc,
+.h-process-desc,
+.h-jrn-desc {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+/* Keep headings properly aligned */
+.h-home h1,
+.h-home h2,
+.h-home h3,
+.h-home h4 {
+    text-align: inherit;
+}
+
+/* Keep special centered sections centered */
+.h-hero-content,
+.h-sec-hd,
+.h-cta,
+.h-quote-banner,
+.h-testi-actions {
+    text-align: center;
+}
+
+/* Mobile alignment */
+@media (max-width: 768px) {
+    .h-home p,
+    .h-para,
+    .h-sec-sub,
+    .h-domain-desc,
+    .h-svc-desc,
+    .h-pub-desc,
+    .h-process-desc,
+    .h-jrn-desc {
+        text-align: left;
+        line-height: 1.75;
+    }
+}
+.h-founder-grid > div:last-child .h-para {
+    text-align: justify;
+    line-height: 1.85;
+    max-width: 680px;
+}
+.h-domains p{
+    text-align: justify;
+    line-height: 1.85;
+    
+}
+
+.h-process p{
+  text-align: justify;
+}
+.h-services p{
+  text-align: justify;
+}

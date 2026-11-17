@@ -1032,7 +1032,7 @@ export const createStory = asyncHandler(async (req, res) => {
 
     authorName:
       authorName?.trim() ||
-      "Prosper Foundation",
+      "Dr. Amit Kumar Pushpam",
 
     fontFamily:
       fontFamily ||

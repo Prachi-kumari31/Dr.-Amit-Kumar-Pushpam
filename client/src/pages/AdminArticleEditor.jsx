@@ -52,7 +52,7 @@ const defaultForm = {
   status: "draft",
   isFeatured: false,
   allowComments: true,
-  authorName: "Prosper Foundation",
+  authorName: "Dr. Amit Kumar Pushpam",
   seoTitle: "",
   seoDescription: "",
 };

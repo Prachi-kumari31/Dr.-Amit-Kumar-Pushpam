@@ -1056,7 +1056,7 @@ export default function AdminPoems() {
 
         <p>
           Manage the poetry collection
-          published on Prosper Foundation.
+          published on Dr. Amit Kumar Pushpam.
         </p>
       </div>
 

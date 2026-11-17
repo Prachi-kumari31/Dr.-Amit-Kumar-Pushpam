@@ -2447,7 +2447,7 @@ const PoemDetail = () => {
             <span>
               <FaUser />
               {poem.authorName ||
-                "Prosper Foundation"}
+                "Dr. Amit Kumar Pushpam"}
             </span>
 
             {dateText && (

@@ -196,7 +196,7 @@ const ContentCard = ({
     item.author?.fullName ||
     item.author?.username ||
     item.author ||
-    "Prosper Foundation";
+    "Dr. Amit Kumar Pushpam";
 
   const date =
     item.publishedAt ||

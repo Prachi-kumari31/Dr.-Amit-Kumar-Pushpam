@@ -357,7 +357,7 @@ export default function Articles() {
 
                       <p>
                         {article.excerpt ||
-                          "Explore this thoughtful article from Prosper Foundation."}
+                          "Explore this thoughtful article from Dr. Amit Kumar Pushpam."}
                       </p>
 
                       <Link

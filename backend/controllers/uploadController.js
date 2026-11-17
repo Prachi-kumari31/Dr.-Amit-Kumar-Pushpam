@@ -14,8 +14,8 @@ const uploadBuffer = (
       cloudinary.uploader.upload_stream(
         {
           folder: isPdf
-            ? "prosper-foundation/pdfs"
-            : "prosper-foundation/editorial",
+            ? "Dr. Amit Kumar Pushpam/pdfs"
+            : "Dr. Amit Kumar Pushpam/editorial",
 
           resource_type: "auto",
 

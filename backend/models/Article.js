@@ -45,7 +45,7 @@ const articleSchema = new mongoose.Schema(
 
     authorName: {
       type: String,
-      default: "Prosper Foundation",
+      default: "Dr. Amit Kumar Pushpam",
       trim: true,
     },
 

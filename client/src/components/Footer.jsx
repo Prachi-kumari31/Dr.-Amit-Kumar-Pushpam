@@ -102,7 +102,7 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <FaEnvelope />
-                <a href="mailto:info@prosperfoundation.com">
+                <a href="mailto:pushpamamit@gmail.com">
                   pushpamamit@gmail.com
                 </a>
               </div>

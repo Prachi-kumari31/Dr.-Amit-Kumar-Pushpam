@@ -487,14 +487,14 @@ export default function Stories() {
 
                     <p>
                       {story.excerpt ||
-                        "Discover this thoughtful story from the Prosper Foundation collection."}
+                        "Discover this thoughtful story from the Dr. Amit Kumar Pushpam collection."}
                     </p>
 
                     <div className="story-card-footer">
 
                       <span className="story-author">
                         {story.author?.name ||
-                          "Prosper Foundation"}
+                          "Dr. Amit Kumar Pushpam"}
                       </span>
 
                       <Link

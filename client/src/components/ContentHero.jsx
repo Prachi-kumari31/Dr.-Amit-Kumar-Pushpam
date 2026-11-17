@@ -12,9 +12,7 @@
 
 //       <div className="content-hero-content">
 
-//         <span className="content-hero-label">
-//           Prosper Foundation
-//         </span>
+
 
 //         <h1>{title}</h1>
 
@@ -43,7 +41,7 @@ import {
 import "./ContentHero.css";
 
 const ContentHero = ({
-  eyebrow = "Prosper Foundation",
+  eyebrow = "Dr. Amit Kumar Pushpam",
   title = "Explore Ideas That Inspire Transformation",
   description = "Discover thoughtful articles, stories, poems, research and publications bringing together psychology, spirituality, philosophy and deeper perspectives on life.",
   image,

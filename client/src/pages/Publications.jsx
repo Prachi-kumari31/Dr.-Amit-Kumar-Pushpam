@@ -641,7 +641,7 @@ export default function Publications() {
 
                     <p>
                       {item.excerpt ||
-                        "Explore this publication from Prosper Foundation."}
+                        "Explore this publication from Dr. Amit Kumar Pushpam."}
                     </p>
 
                     <span className="read-publication">
@@ -734,7 +734,7 @@ export default function Publications() {
                       <span>
                         <User size={14} />
                         {item.author ||
-                          "Prosper Foundation"}
+                          "Dr. Amit Kumar Pushpam"}
                       </span>
                     </div>
 

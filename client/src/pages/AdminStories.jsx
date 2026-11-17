@@ -635,7 +635,7 @@ export default function AdminStories() {
           <p>
             Create, refine and publish
             meaningful writing for the
-            Prosper Foundation community.
+            Dr. Amit Kumar Pushpam community.
           </p>
 
         </div>

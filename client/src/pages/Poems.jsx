@@ -219,7 +219,7 @@ export default function Poems() {
         <div className="poems-hero-content">
 
           <span className="poems-eyebrow">
-            PROSPER FOUNDATION · POETRY
+            Dr. Amit Kumar Pushpam · POETRY
           </span>
 
           <div className="poems-feather">
@@ -267,7 +267,7 @@ export default function Poems() {
         </blockquote>
 
         <span>
-          — Prosper Foundation
+          — Dr. Amit Kumar Pushpam
         </span>
 
       </section>
@@ -380,7 +380,7 @@ export default function Poems() {
 
                     <span>
                       {poem.author?.name ||
-                        "Prosper Foundation"}
+                        "Dr. Amit Kumar Pushpam"}
                     </span>
 
                     <div>

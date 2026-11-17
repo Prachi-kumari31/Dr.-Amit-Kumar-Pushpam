@@ -2532,7 +2532,7 @@ const defaultForm = {
   isFeatured: false,
   allowComments: true,
 
-  authorName: "Prosper Foundation",
+  authorName: "Dr. Amit Kumar Pushpam",
 
   seoTitle: "",
   seoDescription: "",
@@ -3213,7 +3213,7 @@ const removePdf = () => {
 
     authorName:
       form.authorName ||
-      "Prosper Foundation",
+      "Dr. Amit Kumar Pushpam",
 
     seoTitle:
       form.seoTitle || "",
@@ -3574,7 +3574,7 @@ const removePdf = () => {
 
           <div className="editor-heading">
             <span>
-              PROSPER FOUNDATION
+              Dr. Amit Kumar Pushpam
             </span>
 
             <strong>

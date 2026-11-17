@@ -525,7 +525,7 @@ export const createArticle = async (
           allowComments !== false,
         authorName:
           authorName ||
-          "Prosper Foundation",
+          "Dr. Amit Kumar Pushpam",
         seoTitle:
           seoTitle || "",
         seoDescription:

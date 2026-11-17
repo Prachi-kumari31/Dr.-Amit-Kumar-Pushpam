@@ -32,7 +32,7 @@ const publicationSchema = new mongoose.Schema(
 
     author: {
       type: String,
-      default: "Prosper Foundation",
+      default: "Dr. Amit Kumar Pushpam",
       trim: true,
     },
 

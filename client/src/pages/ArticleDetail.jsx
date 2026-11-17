@@ -469,7 +469,7 @@ const fetchComments = async (articleId) => {
             <span>
               By{" "}
               {article.authorName ||
-                "Prosper Foundation"}
+                "Dr. Amit Kumar Pushpam"}
             </span>
 
           </div>

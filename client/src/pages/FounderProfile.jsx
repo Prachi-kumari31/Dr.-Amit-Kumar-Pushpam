@@ -255,7 +255,7 @@ import founderImage from "../assets/images/amit_passport_photo.jpeg";
 const FOUNDER = {
   name:        'Dr. Amit Kumar Pushpam',
   designation: 'PhD · Astrology · Occult Psychologist',
-  role:        'Founder & Lead Consultant — Prosper Foundation',
+  role:        'Founder & Lead Consultant — Dr. Amit Kumar Pushpam',
   hindi:       'सर्वस्यार्तिहरे देवि',
   tagline:     '"Where ancient Vedic wisdom meets the science of the modern mind."',
   photoUrl:    {founderImage},          // set to '/images/founder.jpg' when ready
@@ -491,7 +491,7 @@ export default function FounderProfile() {
             <div className="fp-hero-txt">
               <div className="fp-pill">
                 <span className="fp-pill-dot" aria-hidden="true"/>
-                Founder & Lead Consultant · Prosper Foundation
+                Founder & Lead Consultant · Dr. Amit Kumar Pushpam
               </div>
 
               <h1 className="fp-hero-name">{FOUNDER.name}</h1>

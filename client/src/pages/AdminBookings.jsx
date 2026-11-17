@@ -580,7 +580,7 @@ const handleSchedule = async (e) => {
             <div className="booking-header-content">
 
               <span className="booking-eyebrow">
-                PROSPER FOUNDATION
+                Dr. Amit Kumar Pushpam
               </span>
 
               <h1>

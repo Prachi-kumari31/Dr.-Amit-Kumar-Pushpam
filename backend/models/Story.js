@@ -710,7 +710,7 @@ const storySchema = new mongoose.Schema(
     authorName: {
       type: String,
       default:
-        "Prosper Foundation",
+        "Dr. Amit Kumar Pushpam",
     },
 
     /* =========================================================

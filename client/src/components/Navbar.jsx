@@ -96,7 +96,7 @@ const Navbar = () => {
           <div className="logo-img-container">
             <img
               src={logo}
-              alt="Prosper Foundation Logo"
+              alt="Dr. Amit Kumar Pushpam Logo"
             />
           </div>
 

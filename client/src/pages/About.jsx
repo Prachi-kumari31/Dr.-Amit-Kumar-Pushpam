@@ -94,7 +94,7 @@ export default function About() {
   <div className="ab-container">
 
     <span className="ab-small-title">
-      ABOUT PROSPER FOUNDATION
+      ABOUT Dr. Amit Kumar Pushpam
     </span>
 
     <h4 className="ab-hero-title">
@@ -157,7 +157,7 @@ export default function About() {
               <h2 className="ab-h2">A bridge between <em>ancient wisdom</em> & modern science</h2>
               <div className="ab-gold-bar" />
               <p className="ab-para">
-                Prosper Foundation is a pioneering organisation dedicated to the integration
+               Dr. Amit Kumar Pushpam is a pioneering organisation dedicated to the integration
                 of occult psychology, spiritual wisdom, and modern psychological practices
                 to facilitate holistic personal development.
               </p>
@@ -254,7 +254,7 @@ export default function About() {
         <div className="ab-container">
           <div className="ab-sec-header ab-reveal">
             <span className="ab-eye">Why Us</span>
-            <h2 className="ab-h2">Why Choose Prosper Foundation?</h2>
+            <h2 className="ab-h2">Why Choose Dr. Amit Kumar Pushpam?</h2>
             <div className="ab-gold-bar ab-gold-bar-c" />
           </div>
           <div className="ab-why-grid">
@@ -279,7 +279,7 @@ export default function About() {
             transformative solutions that promote <strong>emotional balance</strong>,
             spiritual awareness, and holistic growth."
           </p>
-          <p className="ab-quote-attr ab-reveal ab-d1">— Dr. [Founder Name], Prosper Foundation</p>
+          <p className="ab-quote-attr ab-reveal ab-d1">— Dr. [Founder Name], Dr. Amit Kumar Pushpam</p>
         </div>
       </div>
 

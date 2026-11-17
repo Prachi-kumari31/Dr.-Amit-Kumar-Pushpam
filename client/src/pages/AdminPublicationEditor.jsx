@@ -43,7 +43,7 @@ const AdminPublicationEditor =
         title: "",
         type: queryType,
         author:
-          "Prosper Foundation",
+          "Dr. Amit Kumar Pushpam",
         category: "",
         excerpt: "",
         content: "",

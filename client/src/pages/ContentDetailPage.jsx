@@ -99,7 +99,7 @@ const ContentDetailPage = () => {
 
               {content.author?.name ||
                 content.author?.fullName ||
-                "Prosper Foundation"}
+                "Dr. Amit Kumar Pushpam"}
             </span>
 
             <span>

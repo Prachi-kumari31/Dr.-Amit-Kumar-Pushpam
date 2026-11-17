@@ -1510,7 +1510,7 @@ const PROCESS = [
 // ];
 
 const STATIC_TESTIMONIALS = [
-  { name: "Priya Sharma",  service: "Psychological Counselling", text: "Prosper Foundation helped me gain clarity during one of the most difficult phases of my life. The counselling sessions completely changed my perspective.", stars: 5 },
+  { name: "Priya Sharma",  service: "Psychological Counselling", text: "Dr. Amit Kumar Pushpam helped me gain clarity during one of the most difficult phases of my life. The counselling sessions completely changed my perspective.", stars: 5 },
   { name: "Rahul Verma",   service: "Astrology Consultation",   text: "The astrological consultation gave me confidence in making important life decisions. Every session was insightful and practical.",                           stars: 5 },
   { name: "Ananya Singh",  service: "Spiritual Guidance",       text: "I experienced remarkable emotional healing through their spiritual guidance. The environment is calm, professional, and trustworthy.",                       stars: 5 },
 ];
@@ -1695,21 +1695,14 @@ useEffect(() => {
         <div className="h-hero-overlay" aria-hidden="true" />
 
         <div className="h-hero-content">
-          <div className="h-hero-pill h-reveal">
-            {/* <span className="h-pill-dot" aria-hidden="true" />
-            Welcome to Prosper Foundation */}
-          </div>
+
             <h1>
             Bridging Science, Psychology & Spiritual
              <br />
                 Wisdom for Human Transformation
            </h1>
           <p className="h-reveal h-d2">
-            Helping individuals discover clarity, emotional balance, inner strength,
-            and purposeful living through research-driven guidance and timeless wisdom.  Exploring psychology, research, occult traditions, spirituality, paranormal
-  studies, education, and resilience to better understand the human mind,
-  human experience, and the questions that continue to challenge conventional
-  explanations.
+           Helping individuals find clarity, emotional balance, and inner strength through psychology, research, and timeless wisdom.
           </p>
           <p className="h-hero-hindi h-reveal h-d2" lang="hi">सर्वस्यार्तिहरे देवि</p>
           <div className="h-hero-btns h-reveal h-d3">
@@ -1759,25 +1752,15 @@ useEffect(() => {
             <div className="h-reveal h-d1">
               <span className="h-eye">Founder & Director</span>
               <h2 className="h-h2">Dr. Amit Kumar Pushpam</h2>
-              <p className="h-founder-role">Psychologist | Researcher | Counsellor | Educator | Occult & Paranormal Studies Practitioner</p>
+              <p className="h-founder-role"> Counselling psychologist | Astrologer | Researcher | Counsellor | Educator | Occult Psychology Practitioner </p>
               <div className="h-bar" />
               <p className="h-para">
-                Dr. Amit Kumar Pushpam is a psychologist, researcher, counsellor, educator, and interdisciplinary practitioner whose
-                 professional interests span Psychology, Research, Occult, Spirituality, Paranormal Studies, Education, and Resilience.
-               
+               Dr. Amit Kumar Pushpam is a Counselling Psychologist, Occult Psychology Practitioner, Astrologer, Spiritual Life Coach and Paranormal Investigator. He holds a Ph.D. in Psychology and has a deep interest in exploring the connection between human psychology and spirituality.
               </p>
 
               <p className="h-para">
-                With a Ph.D. in Psychology and professional experience in counselling,
-                child welfare, social development, research, and education, his work brings
-                academic knowledge of human behaviour into dialogue with traditional
-                knowledge, spiritual practices, occult traditions, and unexplained human
-                experiences.
-              </p>
-             <p className="h-para">
-              His work is driven by a central interest: understanding the human mind,
-              human experience, and the phenomena that continue to challenge conventional explanations.
-</p>
+             Born in Morwa, Samastipur, Bihar, with ancestral roots in Kumar Bajitpur, Vaishali, he is a researcher and writer who believes that every individual has a story to teach. He considers his clients his greatest teachers and uses his writing to express human emotions, suffering and the deeper experiences of life.
+             </p>
               <div className="h-founder-pts">
                 {[
   "Psychology & Counselling",
@@ -1799,7 +1782,7 @@ useEffect(() => {
           {/* Quote */}
           <div className="h-quote-banner h-reveal">
             <FaQuoteLeft className="h-quote-icon" aria-hidden="true" />
-            <p> "Explore without prejudice. Question without fear. Conclude on the basis of evidence."</p>
+            <p> "हर व्यक्ति एक ग्रन्थ है। हर अनुभव एक दर्शन है। क्लाइंट ही हमारा गुरु है। और हर पीड़ा एक कहानी है।"</p>
             <cite>— Dr. Amit Kumar Pushpam</cite>
           </div>
         </div>
@@ -2452,7 +2435,7 @@ useEffect(() => {
               <h2 className="h-h2">Together, we can create <em>meaningful change</em></h2>
               <div className="h-bar" />
               <p className="h-para" style={{ color: "rgba(255,255,255,.62)" }}>
-                Your generosity helps Prosper Foundation advance psychological well-being,
+                Your generosity helps Dr. Amit Kumar Pushpam advance psychological well-being,
                 research, spiritual awareness, education, and community development.
               </p>
               <div className="h-donation-feats">
